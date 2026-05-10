@@ -1,0 +1,382 @@
+/* ===== HERO ===== */
+.hero {
+  height: 90vh;
+  background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #fff;
+}
+
+.hero-subtitle {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #f97316;
+  margin-bottom: 15px;
+}
+
+.hero-desc {
+  font-size: 1.1rem;
+  margin-bottom: 35px;
+  color: #e5e7eb;
+}
+
+/* Search Bar */
+.search-bar {
+  background: white;
+  border-radius: 12px;
+  padding: 20px 25px;
+  display: flex;
+  gap: 15px;
+  align-items: flex-end;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.search-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.search-field label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #6b7280;
+  text-align: left;
+}
+
+.search-field input {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 0.9rem;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  outline: none;
+}
+
+.search-field input:focus {
+  border-color: #0d9488;
+}
+
+.search-btn {
+  background-color: #f97316;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background-color 0.2s;
+}
+
+.search-btn:hover {
+  background-color: #ea6c0a;
+}
+
+/* ===== DESTINATIONS ===== */
+.destinations-section {
+  padding: 70px 0;
+  background-color: #f9fafb;
+}
+
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 220px 220px;
+  gap: 15px;
+}
+
+.dest-card {
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.dest-card.big {
+  grid-row: span 2;
+}
+
+.dest-card:hover .dest-label {
+  background-color: #0d9488;
+}
+
+.dest-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+/* ===== FEATURED PACKAGES ===== */
+.featured-section {
+  padding: 70px 0;
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.view-all-box {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.view-all-btn {
+  background-color: #0d9488;
+  color: white;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.view-all-btn:hover {
+  background-color: #0f766e;
+}
+
+/* ===== HOW TO BOOK ===== */
+.how-to-book {
+  padding: 70px 0;
+  background-color: #f0fdfa;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.step-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  position: relative;
+}
+
+.step-number {
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  background: #f97316;
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.step-icon {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.step-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.step-card p {
+  font-size: 0.85rem;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* ===== TESTIMONIALS ===== */
+.testimonials-section {
+  padding: 70px 0;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.testimonial-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+  border-left: 4px solid #0d9488;
+}
+
+.stars {
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+.review-text {
+  font-size: 0.9rem;
+  color: #4b5563;
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.reviewer-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.reviewer-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #0d9488;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.reviewer-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #1f2937;
+}
+
+.reviewer-location {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+/* ===== BLOG ===== */
+.blog-section {
+  padding: 70px 0;
+  background-color: #f9fafb;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.blog-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.blog-image {
+  height: 180px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 18px;
+}
+
+.blog-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.blog-excerpt {
+  font-size: 0.85rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.read-more-btn {
+  background: none;
+  border: none;
+  color: #0d9488;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0;
+}
+
+.read-more-btn:hover {
+  color: #0f766e;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .packages-grid,
+  .testimonials-grid,
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-title { font-size: 2.5rem; }
+  .hero-subtitle { font-size: 1.8rem; }
+}
+
+@media (max-width: 600px) {
+  .packages-grid,
+  .testimonials-grid,
+  .blog-grid,
+  .steps-grid,
+  .destinations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dest-card.big { grid-row: span 1; }
+  .destinations-grid { grid-template-rows: auto; }
+
+  .search-bar {
+    flex-direction: column;
+  }
+
+  .hero-title { font-size: 2rem; }
+  .hero-subtitle { font-size: 1.4rem; }
+}
